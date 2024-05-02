@@ -24,7 +24,7 @@ typedef enum led_data_type {
 /**
  * @brief Structure to represent the LED.
  */
-typedef struct {
+typedef struct led_type{
     digital_io_t       led_io;    /**< Reference to the DigitalIO object */
     digital_io_state_t led_state; /**< Current state of the LED */
 } led_t;
@@ -62,9 +62,9 @@ typedef return_codes_t (*led_handler_t)(led_t *p_led);
  * @brief Structure for LED controller.
  */
 typedef struct {
-    led_handler_t p_turn_on;  /**< Pointer to function to turn the LED on */
-    led_handler_t p_turn_off; /**< Pointer to function to turn the LED off */
-    led_handler_t p_toggle;   /**< Pointer to function to toggle the LED */
+    led_handler_t turn_on;  /**< Pointer to function to turn the LED on */
+    led_handler_t turn_off; /**< Pointer to function to turn the LED off */
+    led_handler_t toggle;   /**< Pointer to function to toggle the LED */
 } led_controller_t;
 
 /**

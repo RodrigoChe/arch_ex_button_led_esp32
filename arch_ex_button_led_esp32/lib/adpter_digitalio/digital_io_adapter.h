@@ -18,13 +18,13 @@ typedef uint8_t        pin_t;
 typedef variant_t      port_t;
 
 /*!* @brief Digital output states, High or low*/
-typedef enum {
+typedef enum digital_io_state_type{
     digital_io_low  = 0U, /*!< DigitalIoLow  */
     digital_io_high = 1U, /*!< DigitalOutput */
 } digital_io_state_t;
 
 /*!* @brief Digital IO types */
-typedef enum {
+typedef enum digital_io_type{
     digital_input,  /*!< Digital Input */
     digital_output, /*!< Digital Output */
 } digital_io_type_t;
@@ -33,7 +33,7 @@ typedef enum {
  * @typedef digital_io_t
  * @brief digital_io_t structure, used internally by the module.
  */
-typedef struct {
+typedef struct digital_io{
     port_t          port;   /*!< HAL Port */
     pin_t           pin;    /*!< HAL Pin */
     digital_io_type_t type; /*!< Digital IO Type */
@@ -43,7 +43,7 @@ typedef struct {
  * @typedef return_codes_t
  * @brief Pointer to the DigitalIO structure, used internally by the module.
  */
-typedef enum {
+typedef enum return_codes_type{
     return_success = 0,
     return_error,
     return_invalid_input,

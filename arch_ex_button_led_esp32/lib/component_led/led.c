@@ -32,8 +32,10 @@ return_codes_t led_toggle(led_t *p_led) {
 
 // Inicializa o controlador do LED
 return_codes_t led_controller_initialize(led_controller_t *p_controller) {
-    p_controller->p_turn_on = led_turn_on;
-    p_controller->p_turn_off = led_turn_off;
-    p_controller->p_toggle = led_toggle;
+    p_controller->turn_on = led_turn_on;
+    p_controller->turn_off = led_turn_off;
+    p_controller->toggle = led_toggle;
     return (return_success);
 }
+
+/*** end of file ***/
