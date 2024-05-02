@@ -98,4 +98,5 @@ return_codes_t digital_io_toggle(p_digital_io_t dio);
 #endif
 
 #endif /* DIGITAL_IO_ADAPTER_H */
+
 /*** end of file ***/
