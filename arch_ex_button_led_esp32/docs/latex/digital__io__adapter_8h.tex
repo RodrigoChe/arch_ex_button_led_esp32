@@ -1,0 +1,271 @@
+\hypertarget{digital__io__adapter_8h}{}\doxysection{/media/rodrigo\+\_\+che/\+\_\+files/\+Git\+Hub/arch\+\_\+ex\+\_\+button\+\_\+led\+\_\+esp32/arch\+\_\+ex\+\_\+button\+\_\+led\+\_\+esp32/lib/adpter\+\_\+digitalio/digital\+\_\+io\+\_\+adapter.h File Reference}
+\label{digital__io__adapter_8h}\index{/media/rodrigo\_che/\_files/GitHub/arch\_ex\_button\_led\_esp32/arch\_ex\_button\_led\_esp32/lib/adpter\_digitalio/digital\_io\_adapter.h@{/media/rodrigo\_che/\_files/GitHub/arch\_ex\_button\_led\_esp32/arch\_ex\_button\_led\_esp32/lib/adpter\_digitalio/digital\_io\_adapter.h}}
+
+
+\+: Description of Digital IO peripheral interface.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structdigital__io}{digital\+\_\+io}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{digital__io__adapter_8h_a96aba438d7788edcce53b3b2c86b1295}\label{digital__io__adapter_8h_a96aba438d7788edcce53b3b2c86b1295}} 
+typedef void $\ast$ {\bfseries variant\+\_\+t}
+\item 
+\mbox{\Hypertarget{digital__io__adapter_8h_aede467d93ddeb5fdeff6023236aa4ad6}\label{digital__io__adapter_8h_aede467d93ddeb5fdeff6023236aa4ad6}} 
+typedef uint8\+\_\+t {\bfseries pin\+\_\+t}
+\item 
+\mbox{\Hypertarget{digital__io__adapter_8h_a1d3300ae427858ebd9de9f1939eaa309}\label{digital__io__adapter_8h_a1d3300ae427858ebd9de9f1939eaa309}} 
+typedef variant\+\_\+t {\bfseries port\+\_\+t}
+\item 
+typedef enum \mbox{\hyperlink{digital__io__adapter_8h_a4afc6c10c89dfff74bd3e6fde0201dec}{digital\+\_\+io\+\_\+state\+\_\+type}} \mbox{\hyperlink{digital__io__adapter_8h_af9866811d6a72814e011336cba77082d}{digital\+\_\+io\+\_\+state\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Digital output states, High or low. \end{DoxyCompactList}\item 
+typedef enum \mbox{\hyperlink{digital__io__adapter_8h_a216f91cad191660abefa5b029f6904ed}{digital\+\_\+io\+\_\+type}} \mbox{\hyperlink{digital__io__adapter_8h_ac61b1af07c8fc82ba6e20fbe2cee23d6}{digital\+\_\+io\+\_\+type\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Digital IO types. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{digital__io__adapter_8h_a067f8935033674c229e0c3dca49d602d}\label{digital__io__adapter_8h_a067f8935033674c229e0c3dca49d602d}} 
+typedef struct \mbox{\hyperlink{structdigital__io}{digital\+\_\+io}} \mbox{\hyperlink{digital__io__adapter_8h_a067f8935033674c229e0c3dca49d602d}{digital\+\_\+io\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em digital\+\_\+io\+\_\+t structure, used internally by the module. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{digital__io__adapter_8h_a3e223f308f53421d1b43cd0ef5511495}\label{digital__io__adapter_8h_a3e223f308f53421d1b43cd0ef5511495}} 
+typedef struct \mbox{\hyperlink{structdigital__io}{digital\+\_\+io}} $\ast$ {\bfseries p\+\_\+digital\+\_\+io\+\_\+t}
+\item 
+\mbox{\Hypertarget{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}\label{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}} 
+typedef enum return\+\_\+codes\+\_\+type \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Pointer to the Digital\+IO structure, used internally by the module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{digital__io__adapter_8h_a4afc6c10c89dfff74bd3e6fde0201dec}{digital\+\_\+io\+\_\+state\+\_\+type}} \{ \mbox{\hyperlink{digital__io__adapter_8h_a4afc6c10c89dfff74bd3e6fde0201deca4fff436b8090405e0ce7992ef8af9508}{digital\+\_\+io\+\_\+low}} = 0U
+, \mbox{\hyperlink{digital__io__adapter_8h_a4afc6c10c89dfff74bd3e6fde0201deca5aa461a7078f2aabf5ead8e2939ab342}{digital\+\_\+io\+\_\+high}} = 1U
+ \}
+\begin{DoxyCompactList}\small\item\em Digital output states, High or low. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{digital__io__adapter_8h_a216f91cad191660abefa5b029f6904ed}{digital\+\_\+io\+\_\+type}} \{ \mbox{\hyperlink{digital__io__adapter_8h_a216f91cad191660abefa5b029f6904edaba0c504a67579f417c66449a86a66fc0}{digital\+\_\+input}}
+, \mbox{\hyperlink{digital__io__adapter_8h_a216f91cad191660abefa5b029f6904eda6c40c78910ea342f2fdd6394c1de0002}{digital\+\_\+output}}
+ \}
+\begin{DoxyCompactList}\small\item\em Digital IO types. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{digital__io__adapter_8h_a247734042429b47af83fad75620ca06c}\label{digital__io__adapter_8h_a247734042429b47af83fad75620ca06c}} 
+enum {\bfseries return\+\_\+codes\+\_\+type} \{ {\bfseries return\+\_\+success} = 0
+, {\bfseries return\+\_\+error}
+, {\bfseries return\+\_\+invalid\+\_\+input}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{Indent}\textbf{ Initialization and deinitialization}\par
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{digital__io__adapter_8h_a4a978e9f787c6306b0cd9efe147ee603}{digital\+\_\+io\+\_\+initialize}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio, \mbox{\hyperlink{digital__io__adapter_8h_af9866811d6a72814e011336cba77082d}{digital\+\_\+io\+\_\+state\+\_\+t}} initial\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Initializes the Digital\+IO in output mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{digital__io__adapter_8h_ae0a6a3d00ac58e25af7e288a05d7e93f}{digital\+\_\+io\+\_\+deinitialize}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio)
+\begin{DoxyCompactList}\small\item\em Deinitializes the Digital\+IO reference. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{digital__io__adapter_8h_a9bab49010cd3af183b246253790f52a7}{digital\+\_\+io\+\_\+write}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio, \mbox{\hyperlink{digital__io__adapter_8h_af9866811d6a72814e011336cba77082d}{digital\+\_\+io\+\_\+state\+\_\+t}} state)
+\begin{DoxyCompactList}\small\item\em Writes to the digital output. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{digital__io__adapter_8h_aa3f9d056c4e64fe30a4d8bdfef681f3d}{digital\+\_\+io\+\_\+read}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio, \mbox{\hyperlink{digital__io__adapter_8h_af9866811d6a72814e011336cba77082d}{digital\+\_\+io\+\_\+state\+\_\+t}} $\ast$p\+\_\+state)
+\begin{DoxyCompactList}\small\item\em Reads the state of a digital output. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{digital__io__adapter_8h_aa25fd3fd834a781351930ef0a620145a}{digital\+\_\+io\+\_\+toggle}} (\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}} dio)
+\begin{DoxyCompactList}\small\item\em Toggles the output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+\+: Description of Digital IO peripheral interface. 
+
+\begin{DoxyAuthor}{Author}
+\+: Rodrigo D. Pechoneri. 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{digital__io__adapter_8h_af9866811d6a72814e011336cba77082d}\label{digital__io__adapter_8h_af9866811d6a72814e011336cba77082d}} 
+\index{digital\_io\_adapter.h@{digital\_io\_adapter.h}!digital\_io\_state\_t@{digital\_io\_state\_t}}
+\index{digital\_io\_state\_t@{digital\_io\_state\_t}!digital\_io\_adapter.h@{digital\_io\_adapter.h}}
+\doxysubsubsection{\texorpdfstring{digital\_io\_state\_t}{digital\_io\_state\_t}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{digital__io__adapter_8h_a4afc6c10c89dfff74bd3e6fde0201dec}{digital\+\_\+io\+\_\+state\+\_\+type}} \mbox{\hyperlink{digital__io__adapter_8h_af9866811d6a72814e011336cba77082d}{digital\+\_\+io\+\_\+state\+\_\+t}}}
+
+
+
+Digital output states, High or low. 
+
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}\mbox{\Hypertarget{digital__io__adapter_8h_ac61b1af07c8fc82ba6e20fbe2cee23d6}\label{digital__io__adapter_8h_ac61b1af07c8fc82ba6e20fbe2cee23d6}} 
+\index{digital\_io\_adapter.h@{digital\_io\_adapter.h}!digital\_io\_type\_t@{digital\_io\_type\_t}}
+\index{digital\_io\_type\_t@{digital\_io\_type\_t}!digital\_io\_adapter.h@{digital\_io\_adapter.h}}
+\doxysubsubsection{\texorpdfstring{digital\_io\_type\_t}{digital\_io\_type\_t}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{digital__io__adapter_8h_a216f91cad191660abefa5b029f6904ed}{digital\+\_\+io\+\_\+type}} \mbox{\hyperlink{digital__io__adapter_8h_ac61b1af07c8fc82ba6e20fbe2cee23d6}{digital\+\_\+io\+\_\+type\+\_\+t}}}
+
+
+
+Digital IO types. 
+
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{digital__io__adapter_8h_a4afc6c10c89dfff74bd3e6fde0201dec}\label{digital__io__adapter_8h_a4afc6c10c89dfff74bd3e6fde0201dec}} 
+\index{digital\_io\_adapter.h@{digital\_io\_adapter.h}!digital\_io\_state\_type@{digital\_io\_state\_type}}
+\index{digital\_io\_state\_type@{digital\_io\_state\_type}!digital\_io\_adapter.h@{digital\_io\_adapter.h}}
+\doxysubsubsection{\texorpdfstring{digital\_io\_state\_type}{digital\_io\_state\_type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{digital__io__adapter_8h_a4afc6c10c89dfff74bd3e6fde0201dec}{digital\+\_\+io\+\_\+state\+\_\+type}}}
+
+
+
+Digital output states, High or low. 
+
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{digital\_io\_low@{digital\_io\_low}!digital\_io\_adapter.h@{digital\_io\_adapter.h}}\index{digital\_io\_adapter.h@{digital\_io\_adapter.h}!digital\_io\_low@{digital\_io\_low}}}\mbox{\Hypertarget{digital__io__adapter_8h_a4afc6c10c89dfff74bd3e6fde0201deca4fff436b8090405e0ce7992ef8af9508}\label{digital__io__adapter_8h_a4afc6c10c89dfff74bd3e6fde0201deca4fff436b8090405e0ce7992ef8af9508}} 
+digital\+\_\+io\+\_\+low&Digital\+Io\+Low ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{digital\_io\_high@{digital\_io\_high}!digital\_io\_adapter.h@{digital\_io\_adapter.h}}\index{digital\_io\_adapter.h@{digital\_io\_adapter.h}!digital\_io\_high@{digital\_io\_high}}}\mbox{\Hypertarget{digital__io__adapter_8h_a4afc6c10c89dfff74bd3e6fde0201deca5aa461a7078f2aabf5ead8e2939ab342}\label{digital__io__adapter_8h_a4afc6c10c89dfff74bd3e6fde0201deca5aa461a7078f2aabf5ead8e2939ab342}} 
+digital\+\_\+io\+\_\+high&Digital\+Output \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{digital__io__adapter_8h_a216f91cad191660abefa5b029f6904ed}\label{digital__io__adapter_8h_a216f91cad191660abefa5b029f6904ed}} 
+\index{digital\_io\_adapter.h@{digital\_io\_adapter.h}!digital\_io\_type@{digital\_io\_type}}
+\index{digital\_io\_type@{digital\_io\_type}!digital\_io\_adapter.h@{digital\_io\_adapter.h}}
+\doxysubsubsection{\texorpdfstring{digital\_io\_type}{digital\_io\_type}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{digital__io__adapter_8h_a216f91cad191660abefa5b029f6904ed}{digital\+\_\+io\+\_\+type}}}
+
+
+
+Digital IO types. 
+
+
+\begin{DoxyItemize}
+\item 
+\end{DoxyItemize}\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{digital\_input@{digital\_input}!digital\_io\_adapter.h@{digital\_io\_adapter.h}}\index{digital\_io\_adapter.h@{digital\_io\_adapter.h}!digital\_input@{digital\_input}}}\mbox{\Hypertarget{digital__io__adapter_8h_a216f91cad191660abefa5b029f6904edaba0c504a67579f417c66449a86a66fc0}\label{digital__io__adapter_8h_a216f91cad191660abefa5b029f6904edaba0c504a67579f417c66449a86a66fc0}} 
+digital\+\_\+input&Digital Input \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{digital\_output@{digital\_output}!digital\_io\_adapter.h@{digital\_io\_adapter.h}}\index{digital\_io\_adapter.h@{digital\_io\_adapter.h}!digital\_output@{digital\_output}}}\mbox{\Hypertarget{digital__io__adapter_8h_a216f91cad191660abefa5b029f6904eda6c40c78910ea342f2fdd6394c1de0002}\label{digital__io__adapter_8h_a216f91cad191660abefa5b029f6904eda6c40c78910ea342f2fdd6394c1de0002}} 
+digital\+\_\+output&Digital Output \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{digital__io__adapter_8h_ae0a6a3d00ac58e25af7e288a05d7e93f}\label{digital__io__adapter_8h_ae0a6a3d00ac58e25af7e288a05d7e93f}} 
+\index{digital\_io\_adapter.h@{digital\_io\_adapter.h}!digital\_io\_deinitialize@{digital\_io\_deinitialize}}
+\index{digital\_io\_deinitialize@{digital\_io\_deinitialize}!digital\_io\_adapter.h@{digital\_io\_adapter.h}}
+\doxysubsubsection{\texorpdfstring{digital\_io\_deinitialize()}{digital\_io\_deinitialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} digital\+\_\+io\+\_\+deinitialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}}}]{dio }\end{DoxyParamCaption})}
+
+
+
+Deinitializes the Digital\+IO reference. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dio} & Digital\+IO reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+RETURN\+\_\+\+SUCCESS or a specific error code.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+See full documentation in module\textquotesingle{}s header file. 
+\end{DoxyNote}
+\mbox{\Hypertarget{digital__io__adapter_8h_a4a978e9f787c6306b0cd9efe147ee603}\label{digital__io__adapter_8h_a4a978e9f787c6306b0cd9efe147ee603}} 
+\index{digital\_io\_adapter.h@{digital\_io\_adapter.h}!digital\_io\_initialize@{digital\_io\_initialize}}
+\index{digital\_io\_initialize@{digital\_io\_initialize}!digital\_io\_adapter.h@{digital\_io\_adapter.h}}
+\doxysubsubsection{\texorpdfstring{digital\_io\_initialize()}{digital\_io\_initialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} digital\+\_\+io\+\_\+initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}}}]{dio,  }\item[{\mbox{\hyperlink{digital__io__adapter_8h_af9866811d6a72814e011336cba77082d}{digital\+\_\+io\+\_\+state\+\_\+t}}}]{initial\+\_\+state }\end{DoxyParamCaption})}
+
+
+
+Initializes the Digital\+IO in output mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dio} & Digital\+IO reference \\
+\hline
+{\em initial\+\_\+state} & Default output value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+RETURN\+\_\+\+SUCCESS or a specific error code.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+See full documentation in module\textquotesingle{}s header file. 
+\end{DoxyNote}
+\mbox{\Hypertarget{digital__io__adapter_8h_aa3f9d056c4e64fe30a4d8bdfef681f3d}\label{digital__io__adapter_8h_aa3f9d056c4e64fe30a4d8bdfef681f3d}} 
+\index{digital\_io\_adapter.h@{digital\_io\_adapter.h}!digital\_io\_read@{digital\_io\_read}}
+\index{digital\_io\_read@{digital\_io\_read}!digital\_io\_adapter.h@{digital\_io\_adapter.h}}
+\doxysubsubsection{\texorpdfstring{digital\_io\_read()}{digital\_io\_read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} digital\+\_\+io\+\_\+read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}}}]{dio,  }\item[{\mbox{\hyperlink{digital__io__adapter_8h_af9866811d6a72814e011336cba77082d}{digital\+\_\+io\+\_\+state\+\_\+t}} $\ast$}]{p\+\_\+state }\end{DoxyParamCaption})}
+
+
+
+Reads the state of a digital output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dio} & Digital\+IO reference \\
+\hline
+{\em state} & Pointer where the current output state will be saved \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+RETURN\+\_\+\+SUCCESS or a specific error code.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+See full documentation in module\textquotesingle{}s header file. 
+\end{DoxyNote}
+\mbox{\Hypertarget{digital__io__adapter_8h_aa25fd3fd834a781351930ef0a620145a}\label{digital__io__adapter_8h_aa25fd3fd834a781351930ef0a620145a}} 
+\index{digital\_io\_adapter.h@{digital\_io\_adapter.h}!digital\_io\_toggle@{digital\_io\_toggle}}
+\index{digital\_io\_toggle@{digital\_io\_toggle}!digital\_io\_adapter.h@{digital\_io\_adapter.h}}
+\doxysubsubsection{\texorpdfstring{digital\_io\_toggle()}{digital\_io\_toggle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} digital\+\_\+io\+\_\+toggle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}}}]{dio }\end{DoxyParamCaption})}
+
+
+
+Toggles the output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dio} & Digital\+IO reference \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+RETURN\+\_\+\+SUCCESS or a specific error code.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+See full documentation in module\textquotesingle{}s header file. 
+\end{DoxyNote}
+\mbox{\Hypertarget{digital__io__adapter_8h_a9bab49010cd3af183b246253790f52a7}\label{digital__io__adapter_8h_a9bab49010cd3af183b246253790f52a7}} 
+\index{digital\_io\_adapter.h@{digital\_io\_adapter.h}!digital\_io\_write@{digital\_io\_write}}
+\index{digital\_io\_write@{digital\_io\_write}!digital\_io\_adapter.h@{digital\_io\_adapter.h}}
+\doxysubsubsection{\texorpdfstring{digital\_io\_write()}{digital\_io\_write()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} digital\+\_\+io\+\_\+write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structdigital__io}{p\+\_\+digital\+\_\+io\+\_\+t}}}]{dio,  }\item[{\mbox{\hyperlink{digital__io__adapter_8h_af9866811d6a72814e011336cba77082d}{digital\+\_\+io\+\_\+state\+\_\+t}}}]{state }\end{DoxyParamCaption})}
+
+
+
+Writes to the digital output. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dio} & Digital\+IO reference \\
+\hline
+{\em state} & State to be written \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+RETURN\+\_\+\+SUCCESS or a specific error code.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+See full documentation in module\textquotesingle{}s header file. 
+\end{DoxyNote}

@@ -27,10 +27,7 @@ static digital_io_state_t g_button_current_state[BUTTON_MAX_NUMBER] =
 };
 
 /**
- * @brief Initializes a button.
- *
- * @param p_button Pointer to the button structure.
- * @return return_codes_t or a specific error code.
+ * @details This function initializes the specified button by configuring its digital I/O pin.
  */
 return_codes_t button_initialize(button_t *p_button) {
     p_button->button_io.type = digital_input;
@@ -40,10 +37,7 @@ return_codes_t button_initialize(button_t *p_button) {
 }
 
 /**
- * @brief Checks if the button is pressed.
- *
- * @param p_button Pointer to the button structure.
- * @return true if the button is pressed, false otherwise.
+ * @details This function checks the current state of the specified button.
  */
 bool button_is_pressed(button_t *p_button) {
     bool result = false;

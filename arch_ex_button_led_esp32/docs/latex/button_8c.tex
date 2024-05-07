@@ -1,0 +1,69 @@
+\hypertarget{button_8c}{}\doxysection{/media/rodrigo\+\_\+che/\+\_\+files/\+Git\+Hub/arch\+\_\+ex\+\_\+button\+\_\+led\+\_\+esp32/arch\+\_\+ex\+\_\+button\+\_\+led\+\_\+esp32/lib/component\+\_\+button/button.c File Reference}
+\label{button_8c}\index{/media/rodrigo\_che/\_files/GitHub/arch\_ex\_button\_led\_esp32/arch\_ex\_button\_led\_esp32/lib/component\_button/button.c@{/media/rodrigo\_che/\_files/GitHub/arch\_ex\_button\_led\_esp32/arch\_ex\_button\_led\_esp32/lib/component\_button/button.c}}
+
+
+Implementation of the button component interface.  
+
+
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}button.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{button_8c_a7d40f0effec401b90701dce1a0b14583}\label{button_8c_a7d40f0effec401b90701dce1a0b14583}} 
+\#define {\bfseries BOUNCE\+\_\+\+COUNT}~(4)
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} \mbox{\hyperlink{button_8c_a8081225ac34cb635456c8895f67481e0}{button\+\_\+initialize}} (\mbox{\hyperlink{structbutton__t}{button\+\_\+t}} $\ast$p\+\_\+button)
+\begin{DoxyCompactList}\small\item\em Initializes a button. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{button_8c_a496cebc7fbd5ae23aff3ffa7e5c1aebc}{button\+\_\+is\+\_\+pressed}} (\mbox{\hyperlink{structbutton__t}{button\+\_\+t}} $\ast$p\+\_\+button)
+\begin{DoxyCompactList}\small\item\em Checks if the button is pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of the button component interface. 
+
+\begin{DoxyAuthor}{Author}
+Rodrigo D. Pechoneri 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{button_8c_a8081225ac34cb635456c8895f67481e0}\label{button_8c_a8081225ac34cb635456c8895f67481e0}} 
+\index{button.c@{button.c}!button\_initialize@{button\_initialize}}
+\index{button\_initialize@{button\_initialize}!button.c@{button.c}}
+\doxysubsubsection{\texorpdfstring{button\_initialize()}{button\_initialize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{digital__io__adapter_8h_a67f5bb09af55694b1a12ac77d44fd745}{return\+\_\+codes\+\_\+t}} button\+\_\+initialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbutton__t}{button\+\_\+t}} $\ast$}]{p\+\_\+button }\end{DoxyParamCaption})}
+
+
+
+Initializes a button. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+button} & Pointer to the button structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return\+\_\+codes\+\_\+t or a specific error code. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{button_8c_a496cebc7fbd5ae23aff3ffa7e5c1aebc}\label{button_8c_a496cebc7fbd5ae23aff3ffa7e5c1aebc}} 
+\index{button.c@{button.c}!button\_is\_pressed@{button\_is\_pressed}}
+\index{button\_is\_pressed@{button\_is\_pressed}!button.c@{button.c}}
+\doxysubsubsection{\texorpdfstring{button\_is\_pressed()}{button\_is\_pressed()}}
+{\footnotesize\ttfamily bool button\+\_\+is\+\_\+pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structbutton__t}{button\+\_\+t}} $\ast$}]{p\+\_\+button }\end{DoxyParamCaption})}
+
+
+
+Checks if the button is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p\+\_\+button} & Pointer to the button structure. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the button is pressed, false otherwise. 
+\end{DoxyReturn}
