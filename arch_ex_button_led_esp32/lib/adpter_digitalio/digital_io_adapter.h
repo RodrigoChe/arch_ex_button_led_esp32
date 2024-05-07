@@ -13,86 +13,116 @@ extern "C" {
 
 #include <stdint.h>
 
+/**
+ * @brief Pointer to a variant type.
+ */
 typedef void*          variant_t;
+
+/**
+ * @brief Type definition for pin number.
+ */
 typedef uint8_t        pin_t;
+
+/**
+ * @brief Type definition for port.
+ */
 typedef variant_t      port_t;
 
-/*!* @brief Digital output states, High or low*/
-typedef enum digital_io_state_type{
-    digital_io_low  = 0U, /*!< DigitalIoLow  */
-    digital_io_high = 1U, /*!< DigitalOutput */
+/**
+ * @brief Enumeration for digital output states.
+ */
+typedef enum {
+    digital_io_low  = 0U, /**< Digital I/O low state */
+    digital_io_high = 1U  /**< Digital I/O high state */
 } digital_io_state_t;
 
-/*!* @brief Digital IO types */
-typedef enum digital_io_type{
-    digital_input,  /*!< Digital Input */
-    digital_output, /*!< Digital Output */
+/**
+ * @brief Enumeration for digital I/O types.
+ */
+typedef enum {
+    digital_input,  /**< Digital input */
+    digital_output  /**< Digital output */
 } digital_io_type_t;
 
-/*!
- * @typedef digital_io_t
- * @brief digital_io_t structure, used internally by the module.
+/**
+ * @brief Structure to represent a digital I/O pin.
  */
-typedef struct digital_io{
-    port_t          port;   /*!< HAL Port */
-    pin_t           pin;    /*!< HAL Pin */
-    digital_io_type_t type; /*!< Digital IO Type */
+typedef struct digital_io {
+    port_t            port;   /**< Pointer to the port */
+    pin_t             pin;    /**< Pin number */
+    digital_io_type_t type;   /**< Type of digital I/O pin (input/output) */
 } digital_io_t, *p_digital_io_t;
 
-/*!
- * @typedef return_codes_t
- * @brief Pointer to the DigitalIO structure, used internally by the module.
+/**
+ * @brief Return codes for digital I/O operations.
  */
-typedef enum return_codes_type{
-    return_success = 0,
-    return_error,
-    return_invalid_input,
+typedef enum {
+    return_success      = 0, /**< Operation successful */
+    return_error        = 1, /**< Error occurred */
+    return_invalid_input = 2 /**< Invalid input */
 } return_codes_t;
 
-/*!
-* @name Initialization and deinitialization
-* @{
-*/
+/**
+ * @defgroup DigitalIOGroup Digital I/O Functions
+ * @brief Functions for digital I/O operations.
+ * @{
+ */
 
-/*!
- * @brief Initializes the DigitalIO in output mode.
- * @param dio           DigitalIO reference
- * @param initial_state Default output value
- * @return RETURN_SUCCESS or a specific error code.
+/**
+ * @brief Initializes the digital I/O pin.
+ *
+ * This function initializes the specified digital I/O pin with the given initial state.
+ *
+ * @param dio           Pointer to the digital I/O structure.
+ * @param initial_state Default output value.
+ * @return return_success or a specific error code.
  */
 return_codes_t digital_io_initialize(p_digital_io_t dio, digital_io_state_t initial_state);
 
-/*!
- * @brief Deinitializes the DigitalIO reference.
- * @param dio  DigitalIO reference
- * @return RETURN_SUCCESS or a specific error code.
+/**
+ * @brief Deinitializes the digital I/O pin.
+ *
+ * This function deinitializes the specified digital I/O pin.
+ *
+ * @param dio  Pointer to the digital I/O structure.
+ * @return return_success or a specific error code.
  */
 return_codes_t digital_io_deinitialize(p_digital_io_t dio);
 
-/*!
+/**
  * @brief Writes to the digital output.
- * @param dio    DigitalIO reference
- * @param state  State to be written
- * @return RETURN_SUCCESS or a specific error code.
+ *
+ * This function writes the specified state to the digital output.
+ *
+ * @param dio    Pointer to the digital I/O structure.
+ * @param state  State to be written.
+ * @return return_success or a specific error code.
  */
 return_codes_t digital_io_write(p_digital_io_t dio, digital_io_state_t state);
 
-/*!
- * @brief Reads the state of a digital output.
- * @param dio    DigitalIO reference
- * @param state  Pointer where the current output state will be saved
- * @return RETURN_SUCCESS or a specific error code.
+/**
+ * @brief Reads the state of the digital output.
+ *
+ * This function reads the current state of the digital output.
+ *
+ * @param dio    Pointer to the digital I/O structure.
+ * @param state  Pointer where the current output state will be saved.
+ * @return return_success or a specific error code.
  */
 return_codes_t digital_io_read(p_digital_io_t dio, digital_io_state_t* p_state);
 
-/*!
- * @brief Toggles the output.
- * @param dio    DigitalIO reference
- * @return RETURN_SUCCESS or a specific error code.
+/**
+ * @brief Toggles the output state.
+ *
+ * This function toggles the output state of the digital I/O pin.
+ *
+ * @param dio    Pointer to the digital I/O structure.
+ * @return return_success or a specific error code.
  */
 return_codes_t digital_io_toggle(p_digital_io_t dio);
 
-/* @} */
+/** @} */
+
 #ifdef __cplusplus
 }
 #endif
