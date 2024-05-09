@@ -1,4 +1,3 @@
-//#include <Arduino.h>
 #include "button.h"
 #include "hw_map.h"
 #include "led.h"
@@ -29,8 +28,6 @@ void setup() {
 
     pushButton2.button_io.pin = BUTTON_2_PIN;
     button_initialize(&pushButton2);
-
-    Serial.begin(9600); // opens serial port, sets data rate to 115200 bps
 }
 
 void loop() {
