@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My_Project: digital_io Struct Reference</title>
+<title>arch_ex_button_led_esp32: digital_io Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My_Project
-   &#160;<span id="projectnumber">0.1.1</span>
+   <div id="projectname">arch_ex_button_led_esp32
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">second test to see docs on led module</div>
+   <div id="projectbrief">Example of using layered architecture bare metal for buttons and leds aplication</div>
   </td>
  </tr>
  </tbody>
@@ -69,63 +69,30 @@ $(function() {
 <div class="title">digital_io Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Structure to represent a digital I/O pin.  
+ <a href="structdigital__io.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="digital__io__adapter_8h_source.html">digital_io_adapter.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ac9ee24e988b48236762f815b201bed8a"><td class="memItemLeft" align="right" valign="top">port_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdigital__io.html#ac9ee24e988b48236762f815b201bed8a">port</a></td></tr>
+<tr class="memitem:ac9ee24e988b48236762f815b201bed8a"><td class="memItemLeft" align="right" valign="top"><a id="ac9ee24e988b48236762f815b201bed8a"></a>
+<a class="el" href="digital__io__adapter_8h.html#a1d3300ae427858ebd9de9f1939eaa309">port_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdigital__io.html#ac9ee24e988b48236762f815b201bed8a">port</a></td></tr>
+<tr class="memdesc:ac9ee24e988b48236762f815b201bed8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the port. <br /></td></tr>
 <tr class="separator:ac9ee24e988b48236762f815b201bed8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab322a42eb2d992af0fe951f228d8410b"><td class="memItemLeft" align="right" valign="top">pin_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdigital__io.html#ab322a42eb2d992af0fe951f228d8410b">pin</a></td></tr>
+<tr class="memitem:ab322a42eb2d992af0fe951f228d8410b"><td class="memItemLeft" align="right" valign="top"><a id="ab322a42eb2d992af0fe951f228d8410b"></a>
+<a class="el" href="digital__io__adapter_8h.html#aede467d93ddeb5fdeff6023236aa4ad6">pin_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdigital__io.html#ab322a42eb2d992af0fe951f228d8410b">pin</a></td></tr>
+<tr class="memdesc:ab322a42eb2d992af0fe951f228d8410b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pin number. <br /></td></tr>
 <tr class="separator:ab322a42eb2d992af0fe951f228d8410b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6226cd7beed3b042147cc152340f260c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__io__adapter_8h.html#ac61b1af07c8fc82ba6e20fbe2cee23d6">digital_io_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdigital__io.html#a6226cd7beed3b042147cc152340f260c">type</a></td></tr>
+<tr class="memitem:a6226cd7beed3b042147cc152340f260c"><td class="memItemLeft" align="right" valign="top"><a id="a6226cd7beed3b042147cc152340f260c"></a>
+<a class="el" href="digital__io__adapter_8h.html#a033d47970169ec3ed598b9e714ded389">digital_io_type_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdigital__io.html#a6226cd7beed3b042147cc152340f260c">type</a></td></tr>
+<tr class="memdesc:a6226cd7beed3b042147cc152340f260c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of digital I/O pin (input/output) <br /></td></tr>
 <tr class="separator:a6226cd7beed3b042147cc152340f260c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="ab322a42eb2d992af0fe951f228d8410b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab322a42eb2d992af0fe951f228d8410b">&#9670;&nbsp;</a></span>pin</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pin_t pin</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>HAL Pin </p>
-
-</div>
-</div>
-<a id="ac9ee24e988b48236762f815b201bed8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac9ee24e988b48236762f815b201bed8a">&#9670;&nbsp;</a></span>port</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">port_t port</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>HAL Port </p>
-
-</div>
-</div>
-<a id="a6226cd7beed3b042147cc152340f260c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6226cd7beed3b042147cc152340f260c">&#9670;&nbsp;</a></span>type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="digital__io__adapter_8h.html#ac61b1af07c8fc82ba6e20fbe2cee23d6">digital_io_type_t</a> type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Digital IO Type </p>
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Structure to represent a digital I/O pin. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>/media/rodrigo_che/_files/GitHub/arch_ex_button_led_esp32/arch_ex_button_led_esp32/lib/adpter_digitalio/<a class="el" href="digital__io__adapter_8h_source.html">digital_io_adapter.h</a></li>
 </ul>
 </div><!-- contents -->

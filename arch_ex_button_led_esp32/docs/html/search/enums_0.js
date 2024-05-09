@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['digital_5fio_5fstate_5ftype_98',['digital_io_state_type',['../digital__io__adapter_8h.html#a4afc6c10c89dfff74bd3e6fde0201dec',1,'digital_io_adapter.h']]],
-  ['digital_5fio_5ftype_99',['digital_io_type',['../digital__io__adapter_8h.html#a216f91cad191660abefa5b029f6904ed',1,'digital_io_adapter.h']]]
+  ['digital_5fio_5fstate_5ft_104',['digital_io_state_t',['../digital__io__adapter_8h.html#acd6cb931c16a42d28d7e7b02e0c7f109',1,'digital_io_adapter.h']]],
+  ['digital_5fio_5ftype_5ft_105',['digital_io_type_t',['../digital__io__adapter_8h.html#a033d47970169ec3ed598b9e714ded389',1,'digital_io_adapter.h']]]
 ];

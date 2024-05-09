@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My_Project: /media/rodrigo_che/_files/GitHub/arch_ex_button_led_esp32/arch_ex_button_led_esp32/lib/component_button/button.c File Reference</title>
+<title>arch_ex_button_led_esp32: /media/rodrigo_che/_files/GitHub/arch_ex_button_led_esp32/arch_ex_button_led_esp32/lib/component_button/button.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My_Project
-   &#160;<span id="projectnumber">0.1.1</span>
+   <div id="projectname">arch_ex_button_led_esp32
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">second test to see docs on led module</div>
+   <div id="projectbrief">Example of using layered architecture bare metal for buttons and leds aplication</div>
   </td>
  </tr>
  </tbody>
@@ -88,72 +88,17 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8081225ac34cb635456c8895f67481e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="button_8c.html#a8081225ac34cb635456c8895f67481e0">button_initialize</a> (<a class="el" href="structbutton__t.html">button_t</a> *p_button)</td></tr>
-<tr class="memdesc:a8081225ac34cb635456c8895f67481e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a button.  <a href="button_8c.html#a8081225ac34cb635456c8895f67481e0">More...</a><br /></td></tr>
-<tr class="separator:a8081225ac34cb635456c8895f67481e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a496cebc7fbd5ae23aff3ffa7e5c1aebc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="button_8c.html#a496cebc7fbd5ae23aff3ffa7e5c1aebc">button_is_pressed</a> (<a class="el" href="structbutton__t.html">button_t</a> *p_button)</td></tr>
-<tr class="memdesc:a496cebc7fbd5ae23aff3ffa7e5c1aebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the button is pressed.  <a href="button_8c.html#a496cebc7fbd5ae23aff3ffa7e5c1aebc">More...</a><br /></td></tr>
-<tr class="separator:a496cebc7fbd5ae23aff3ffa7e5c1aebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8081225ac34cb635456c8895f67481e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___button_group.html#ga8081225ac34cb635456c8895f67481e0">button_initialize</a> (<a class="el" href="structbutton__t.html">button_t</a> *p_button)</td></tr>
+<tr class="memdesc:ga8081225ac34cb635456c8895f67481e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a button.  <a href="group___button_group.html#ga8081225ac34cb635456c8895f67481e0">More...</a><br /></td></tr>
+<tr class="separator:ga8081225ac34cb635456c8895f67481e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga496cebc7fbd5ae23aff3ffa7e5c1aebc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___button_group.html#ga496cebc7fbd5ae23aff3ffa7e5c1aebc">button_is_pressed</a> (<a class="el" href="structbutton__t.html">button_t</a> *p_button)</td></tr>
+<tr class="memdesc:ga496cebc7fbd5ae23aff3ffa7e5c1aebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the button is pressed.  <a href="group___button_group.html#ga496cebc7fbd5ae23aff3ffa7e5c1aebc">More...</a><br /></td></tr>
+<tr class="separator:ga496cebc7fbd5ae23aff3ffa7e5c1aebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Implementation of the button component interface. </p>
 <dl class="section author"><dt>Author</dt><dd>Rodrigo D. Pechoneri </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a8081225ac34cb635456c8895f67481e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8081225ac34cb635456c8895f67481e0">&#9670;&nbsp;</a></span>button_initialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a> button_initialize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structbutton__t.html">button_t</a> *&#160;</td>
-          <td class="paramname"><em>p_button</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes a button. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_button</td><td>Pointer to the button structure. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>return_codes_t or a specific error code. </dd></dl>
-
-</div>
-</div>
-<a id="a496cebc7fbd5ae23aff3ffa7e5c1aebc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a496cebc7fbd5ae23aff3ffa7e5c1aebc">&#9670;&nbsp;</a></span>button_is_pressed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool button_is_pressed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structbutton__t.html">button_t</a> *&#160;</td>
-          <td class="paramname"><em>p_button</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks if the button is pressed. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p_button</td><td>Pointer to the button structure. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the button is pressed, false otherwise. </dd></dl>
-
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1

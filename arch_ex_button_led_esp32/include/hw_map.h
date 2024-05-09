@@ -36,7 +36,7 @@
 /**
  * @brief Pin number for the second button.
  */
-#define BUTTON_2_PIN    (1)
+#define BUTTON_2_PIN    (22)
 
 /* @} */
 

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>My_Project: /media/rodrigo_che/_files/GitHub/arch_ex_button_led_esp32/arch_ex_button_led_esp32/lib/adpter_digitalio/digital_io_adapter.h File Reference</title>
+<title>arch_ex_button_led_esp32: /media/rodrigo_che/_files/GitHub/arch_ex_button_led_esp32/arch_ex_button_led_esp32/lib/adpter_digitalio/digital_io_adapter.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,10 +21,10 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">My_Project
-   &#160;<span id="projectnumber">0.1.1</span>
+   <div id="projectname">arch_ex_button_led_esp32
+   &#160;<span id="projectnumber">1.0</span>
    </div>
-   <div id="projectbrief">second test to see docs on led module</div>
+   <div id="projectbrief">Example of using layered architecture bare metal for buttons and leds aplication</div>
   </td>
  </tr>
  </tbody>
@@ -70,7 +70,8 @@ $(function() {
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">digital_io_adapter.h File Reference</div>  </div>
 </div><!--header-->
@@ -85,339 +86,137 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdigital__io.html">digital_io</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to represent a digital I/O pin.  <a href="structdigital__io.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a96aba438d7788edcce53b3b2c86b1295"><td class="memItemLeft" align="right" valign="top"><a id="a96aba438d7788edcce53b3b2c86b1295"></a>
-typedef void *&#160;</td><td class="memItemRight" valign="bottom"><b>variant_t</b></td></tr>
+typedef void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#a96aba438d7788edcce53b3b2c86b1295">variant_t</a></td></tr>
+<tr class="memdesc:a96aba438d7788edcce53b3b2c86b1295"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a variant type. <br /></td></tr>
 <tr class="separator:a96aba438d7788edcce53b3b2c86b1295"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aede467d93ddeb5fdeff6023236aa4ad6"><td class="memItemLeft" align="right" valign="top"><a id="aede467d93ddeb5fdeff6023236aa4ad6"></a>
-typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><b>pin_t</b></td></tr>
+typedef uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#aede467d93ddeb5fdeff6023236aa4ad6">pin_t</a></td></tr>
+<tr class="memdesc:aede467d93ddeb5fdeff6023236aa4ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type definition for pin number. <br /></td></tr>
 <tr class="separator:aede467d93ddeb5fdeff6023236aa4ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d3300ae427858ebd9de9f1939eaa309"><td class="memItemLeft" align="right" valign="top"><a id="a1d3300ae427858ebd9de9f1939eaa309"></a>
-typedef variant_t&#160;</td><td class="memItemRight" valign="bottom"><b>port_t</b></td></tr>
+typedef <a class="el" href="digital__io__adapter_8h.html#a96aba438d7788edcce53b3b2c86b1295">variant_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#a1d3300ae427858ebd9de9f1939eaa309">port_t</a></td></tr>
+<tr class="memdesc:a1d3300ae427858ebd9de9f1939eaa309"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type definition for port. <br /></td></tr>
 <tr class="separator:a1d3300ae427858ebd9de9f1939eaa309"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9866811d6a72814e011336cba77082d"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="digital__io__adapter_8h.html#a4afc6c10c89dfff74bd3e6fde0201dec">digital_io_state_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#af9866811d6a72814e011336cba77082d">digital_io_state_t</a></td></tr>
-<tr class="memdesc:af9866811d6a72814e011336cba77082d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Digital output states, High or low.  <a href="digital__io__adapter_8h.html#af9866811d6a72814e011336cba77082d">More...</a><br /></td></tr>
-<tr class="separator:af9866811d6a72814e011336cba77082d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac61b1af07c8fc82ba6e20fbe2cee23d6"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="digital__io__adapter_8h.html#a216f91cad191660abefa5b029f6904ed">digital_io_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#ac61b1af07c8fc82ba6e20fbe2cee23d6">digital_io_type_t</a></td></tr>
-<tr class="memdesc:ac61b1af07c8fc82ba6e20fbe2cee23d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Digital IO types.  <a href="digital__io__adapter_8h.html#ac61b1af07c8fc82ba6e20fbe2cee23d6">More...</a><br /></td></tr>
-<tr class="separator:ac61b1af07c8fc82ba6e20fbe2cee23d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a067f8935033674c229e0c3dca49d602d"><td class="memItemLeft" align="right" valign="top"><a id="a067f8935033674c229e0c3dca49d602d"></a>
-typedef struct <a class="el" href="structdigital__io.html">digital_io</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#a067f8935033674c229e0c3dca49d602d">digital_io_t</a></td></tr>
-<tr class="memdesc:a067f8935033674c229e0c3dca49d602d"><td class="mdescLeft">&#160;</td><td class="mdescRight">digital_io_t structure, used internally by the module. <br /></td></tr>
-<tr class="separator:a067f8935033674c229e0c3dca49d602d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0447eef6e6a162bf10320b3746b9be18"><td class="memItemLeft" align="right" valign="top"><a id="a0447eef6e6a162bf10320b3746b9be18"></a>
+typedef struct <a class="el" href="structdigital__io.html">digital_io</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#a0447eef6e6a162bf10320b3746b9be18">digital_io_t</a></td></tr>
+<tr class="memdesc:a0447eef6e6a162bf10320b3746b9be18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Structure to represent a digital I/O pin. <br /></td></tr>
+<tr class="separator:a0447eef6e6a162bf10320b3746b9be18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e223f308f53421d1b43cd0ef5511495"><td class="memItemLeft" align="right" valign="top"><a id="a3e223f308f53421d1b43cd0ef5511495"></a>
 typedef struct <a class="el" href="structdigital__io.html">digital_io</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>p_digital_io_t</b></td></tr>
 <tr class="separator:a3e223f308f53421d1b43cd0ef5511495"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f5bb09af55694b1a12ac77d44fd745"><td class="memItemLeft" align="right" valign="top"><a id="a67f5bb09af55694b1a12ac77d44fd745"></a>
-typedef enum return_codes_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a></td></tr>
-<tr class="memdesc:a67f5bb09af55694b1a12ac77d44fd745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the DigitalIO structure, used internally by the module. <br /></td></tr>
-<tr class="separator:a67f5bb09af55694b1a12ac77d44fd745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a4afc6c10c89dfff74bd3e6fde0201dec"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#a4afc6c10c89dfff74bd3e6fde0201dec">digital_io_state_type</a> { <a class="el" href="digital__io__adapter_8h.html#a4afc6c10c89dfff74bd3e6fde0201deca4fff436b8090405e0ce7992ef8af9508">digital_io_low</a> = 0U
-, <a class="el" href="digital__io__adapter_8h.html#a4afc6c10c89dfff74bd3e6fde0201deca5aa461a7078f2aabf5ead8e2939ab342">digital_io_high</a> = 1U
+<tr class="memitem:acd6cb931c16a42d28d7e7b02e0c7f109"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#acd6cb931c16a42d28d7e7b02e0c7f109">digital_io_state_t</a> { <a class="el" href="digital__io__adapter_8h.html#acd6cb931c16a42d28d7e7b02e0c7f109a4fff436b8090405e0ce7992ef8af9508">digital_io_low</a> = 0U
+, <a class="el" href="digital__io__adapter_8h.html#acd6cb931c16a42d28d7e7b02e0c7f109a5aa461a7078f2aabf5ead8e2939ab342">digital_io_high</a> = 1U
  }</td></tr>
-<tr class="memdesc:a4afc6c10c89dfff74bd3e6fde0201dec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Digital output states, High or low.  <a href="digital__io__adapter_8h.html#a4afc6c10c89dfff74bd3e6fde0201dec">More...</a><br /></td></tr>
-<tr class="separator:a4afc6c10c89dfff74bd3e6fde0201dec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a216f91cad191660abefa5b029f6904ed"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#a216f91cad191660abefa5b029f6904ed">digital_io_type</a> { <a class="el" href="digital__io__adapter_8h.html#a216f91cad191660abefa5b029f6904edaba0c504a67579f417c66449a86a66fc0">digital_input</a>
-, <a class="el" href="digital__io__adapter_8h.html#a216f91cad191660abefa5b029f6904eda6c40c78910ea342f2fdd6394c1de0002">digital_output</a>
+<tr class="memdesc:acd6cb931c16a42d28d7e7b02e0c7f109"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for digital output states.  <a href="digital__io__adapter_8h.html#acd6cb931c16a42d28d7e7b02e0c7f109">More...</a><br /></td></tr>
+<tr class="separator:acd6cb931c16a42d28d7e7b02e0c7f109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033d47970169ec3ed598b9e714ded389"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#a033d47970169ec3ed598b9e714ded389">digital_io_type_t</a> { <a class="el" href="digital__io__adapter_8h.html#a033d47970169ec3ed598b9e714ded389aba0c504a67579f417c66449a86a66fc0">digital_input</a>
+, <a class="el" href="digital__io__adapter_8h.html#a033d47970169ec3ed598b9e714ded389a6c40c78910ea342f2fdd6394c1de0002">digital_output</a>
  }</td></tr>
-<tr class="memdesc:a216f91cad191660abefa5b029f6904ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Digital IO types.  <a href="digital__io__adapter_8h.html#a216f91cad191660abefa5b029f6904ed">More...</a><br /></td></tr>
-<tr class="separator:a216f91cad191660abefa5b029f6904ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a247734042429b47af83fad75620ca06c"><td class="memItemLeft" align="right" valign="top"><a id="a247734042429b47af83fad75620ca06c"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>return_codes_type</b> { <b>return_success</b> = 0
-, <b>return_error</b>
-, <b>return_invalid_input</b>
+<tr class="memdesc:a033d47970169ec3ed598b9e714ded389"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumeration for digital I/O types.  <a href="digital__io__adapter_8h.html#a033d47970169ec3ed598b9e714ded389">More...</a><br /></td></tr>
+<tr class="separator:a033d47970169ec3ed598b9e714ded389"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67f5bb09af55694b1a12ac77d44fd745"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a> { <a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745a4495f78352a9709314d1453e7e417a3c">return_success</a> = 0
+, <a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745aeefbd22ba103ae12edb1f1d855dbd81a">return_error</a> = 1
+, <a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745a1196b1aba206c2e3cd3519f915d977d9">return_invalid_input</a> = 2
  }</td></tr>
-<tr class="separator:a247734042429b47af83fad75620ca06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a67f5bb09af55694b1a12ac77d44fd745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return codes for digital I/O operations.  <a href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">More...</a><br /></td></tr>
+<tr class="separator:a67f5bb09af55694b1a12ac77d44fd745"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">Initialization and deinitialization</div></td></tr>
-<tr class="memitem:a4a978e9f787c6306b0cd9efe147ee603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#a4a978e9f787c6306b0cd9efe147ee603">digital_io_initialize</a> (<a class="el" href="structdigital__io.html">p_digital_io_t</a> dio, <a class="el" href="digital__io__adapter_8h.html#af9866811d6a72814e011336cba77082d">digital_io_state_t</a> initial_state)</td></tr>
-<tr class="memdesc:a4a978e9f787c6306b0cd9efe147ee603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the DigitalIO in output mode.  <a href="digital__io__adapter_8h.html#a4a978e9f787c6306b0cd9efe147ee603">More...</a><br /></td></tr>
-<tr class="separator:a4a978e9f787c6306b0cd9efe147ee603"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0a6a3d00ac58e25af7e288a05d7e93f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#ae0a6a3d00ac58e25af7e288a05d7e93f">digital_io_deinitialize</a> (<a class="el" href="structdigital__io.html">p_digital_io_t</a> dio)</td></tr>
-<tr class="memdesc:ae0a6a3d00ac58e25af7e288a05d7e93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitializes the DigitalIO reference.  <a href="digital__io__adapter_8h.html#ae0a6a3d00ac58e25af7e288a05d7e93f">More...</a><br /></td></tr>
-<tr class="separator:ae0a6a3d00ac58e25af7e288a05d7e93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bab49010cd3af183b246253790f52a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#a9bab49010cd3af183b246253790f52a7">digital_io_write</a> (<a class="el" href="structdigital__io.html">p_digital_io_t</a> dio, <a class="el" href="digital__io__adapter_8h.html#af9866811d6a72814e011336cba77082d">digital_io_state_t</a> state)</td></tr>
-<tr class="memdesc:a9bab49010cd3af183b246253790f52a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes to the digital output.  <a href="digital__io__adapter_8h.html#a9bab49010cd3af183b246253790f52a7">More...</a><br /></td></tr>
-<tr class="separator:a9bab49010cd3af183b246253790f52a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3f9d056c4e64fe30a4d8bdfef681f3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#aa3f9d056c4e64fe30a4d8bdfef681f3d">digital_io_read</a> (<a class="el" href="structdigital__io.html">p_digital_io_t</a> dio, <a class="el" href="digital__io__adapter_8h.html#af9866811d6a72814e011336cba77082d">digital_io_state_t</a> *p_state)</td></tr>
-<tr class="memdesc:aa3f9d056c4e64fe30a4d8bdfef681f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the state of a digital output.  <a href="digital__io__adapter_8h.html#aa3f9d056c4e64fe30a4d8bdfef681f3d">More...</a><br /></td></tr>
-<tr class="separator:aa3f9d056c4e64fe30a4d8bdfef681f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa25fd3fd834a781351930ef0a620145a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="digital__io__adapter_8h.html#aa25fd3fd834a781351930ef0a620145a">digital_io_toggle</a> (<a class="el" href="structdigital__io.html">p_digital_io_t</a> dio)</td></tr>
-<tr class="memdesc:aa25fd3fd834a781351930ef0a620145a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the output.  <a href="digital__io__adapter_8h.html#aa25fd3fd834a781351930ef0a620145a">More...</a><br /></td></tr>
-<tr class="separator:aa25fd3fd834a781351930ef0a620145a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4a978e9f787c6306b0cd9efe147ee603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___digital_i_o_group.html#ga4a978e9f787c6306b0cd9efe147ee603">digital_io_initialize</a> (<a class="el" href="structdigital__io.html">p_digital_io_t</a> dio, <a class="el" href="digital__io__adapter_8h.html#acd6cb931c16a42d28d7e7b02e0c7f109">digital_io_state_t</a> initial_state)</td></tr>
+<tr class="memdesc:ga4a978e9f787c6306b0cd9efe147ee603"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the digital I/O pin.  <a href="group___digital_i_o_group.html#ga4a978e9f787c6306b0cd9efe147ee603">More...</a><br /></td></tr>
+<tr class="separator:ga4a978e9f787c6306b0cd9efe147ee603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0a6a3d00ac58e25af7e288a05d7e93f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___digital_i_o_group.html#gae0a6a3d00ac58e25af7e288a05d7e93f">digital_io_deinitialize</a> (<a class="el" href="structdigital__io.html">p_digital_io_t</a> dio)</td></tr>
+<tr class="memdesc:gae0a6a3d00ac58e25af7e288a05d7e93f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitializes the digital I/O pin.  <a href="group___digital_i_o_group.html#gae0a6a3d00ac58e25af7e288a05d7e93f">More...</a><br /></td></tr>
+<tr class="separator:gae0a6a3d00ac58e25af7e288a05d7e93f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9bab49010cd3af183b246253790f52a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___digital_i_o_group.html#ga9bab49010cd3af183b246253790f52a7">digital_io_write</a> (<a class="el" href="structdigital__io.html">p_digital_io_t</a> dio, <a class="el" href="digital__io__adapter_8h.html#acd6cb931c16a42d28d7e7b02e0c7f109">digital_io_state_t</a> state)</td></tr>
+<tr class="memdesc:ga9bab49010cd3af183b246253790f52a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes to the digital output.  <a href="group___digital_i_o_group.html#ga9bab49010cd3af183b246253790f52a7">More...</a><br /></td></tr>
+<tr class="separator:ga9bab49010cd3af183b246253790f52a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa3f9d056c4e64fe30a4d8bdfef681f3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___digital_i_o_group.html#gaa3f9d056c4e64fe30a4d8bdfef681f3d">digital_io_read</a> (<a class="el" href="structdigital__io.html">p_digital_io_t</a> dio, <a class="el" href="digital__io__adapter_8h.html#acd6cb931c16a42d28d7e7b02e0c7f109">digital_io_state_t</a> *p_state)</td></tr>
+<tr class="memdesc:gaa3f9d056c4e64fe30a4d8bdfef681f3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads the state of the digital output.  <a href="group___digital_i_o_group.html#gaa3f9d056c4e64fe30a4d8bdfef681f3d">More...</a><br /></td></tr>
+<tr class="separator:gaa3f9d056c4e64fe30a4d8bdfef681f3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa25fd3fd834a781351930ef0a620145a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___digital_i_o_group.html#gaa25fd3fd834a781351930ef0a620145a">digital_io_toggle</a> (<a class="el" href="structdigital__io.html">p_digital_io_t</a> dio)</td></tr>
+<tr class="memdesc:gaa25fd3fd834a781351930ef0a620145a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggles the output state.  <a href="group___digital_i_o_group.html#gaa25fd3fd834a781351930ef0a620145a">More...</a><br /></td></tr>
+<tr class="separator:gaa25fd3fd834a781351930ef0a620145a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>: Description of Digital IO peripheral interface. </p>
 <dl class="section author"><dt>Author</dt><dd>: Rodrigo D. Pechoneri. </dd></dl>
-</div><h2 class="groupheader">Typedef Documentation</h2>
-<a id="af9866811d6a72814e011336cba77082d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9866811d6a72814e011336cba77082d">&#9670;&nbsp;</a></span>digital_io_state_t</h2>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="acd6cb931c16a42d28d7e7b02e0c7f109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd6cb931c16a42d28d7e7b02e0c7f109">&#9670;&nbsp;</a></span>digital_io_state_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef enum <a class="el" href="digital__io__adapter_8h.html#a4afc6c10c89dfff74bd3e6fde0201dec">digital_io_state_type</a> <a class="el" href="digital__io__adapter_8h.html#af9866811d6a72814e011336cba77082d">digital_io_state_t</a></td>
+          <td class="memname">enum <a class="el" href="digital__io__adapter_8h.html#acd6cb931c16a42d28d7e7b02e0c7f109">digital_io_state_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Digital output states, High or low. </p>
-<ul>
-<li></li>
-</ul>
-
-</div>
-</div>
-<a id="ac61b1af07c8fc82ba6e20fbe2cee23d6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac61b1af07c8fc82ba6e20fbe2cee23d6">&#9670;&nbsp;</a></span>digital_io_type_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef enum <a class="el" href="digital__io__adapter_8h.html#a216f91cad191660abefa5b029f6904ed">digital_io_type</a> <a class="el" href="digital__io__adapter_8h.html#ac61b1af07c8fc82ba6e20fbe2cee23d6">digital_io_type_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Digital IO types. </p>
-<ul>
-<li></li>
-</ul>
-
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a4afc6c10c89dfff74bd3e6fde0201dec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4afc6c10c89dfff74bd3e6fde0201dec">&#9670;&nbsp;</a></span>digital_io_state_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="digital__io__adapter_8h.html#a4afc6c10c89dfff74bd3e6fde0201dec">digital_io_state_type</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Digital output states, High or low. </p>
-<ul>
-<li></li>
-</ul>
+<p>Enumeration for digital output states. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4afc6c10c89dfff74bd3e6fde0201deca4fff436b8090405e0ce7992ef8af9508"></a>digital_io_low&#160;</td><td class="fielddoc"><p>DigitalIoLow <br  />
- </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acd6cb931c16a42d28d7e7b02e0c7f109a4fff436b8090405e0ce7992ef8af9508"></a>digital_io_low&#160;</td><td class="fielddoc"><p>Digital I/O low state. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a4afc6c10c89dfff74bd3e6fde0201deca5aa461a7078f2aabf5ead8e2939ab342"></a>digital_io_high&#160;</td><td class="fielddoc"><p>DigitalOutput </p>
+<tr><td class="fieldname"><a id="acd6cb931c16a42d28d7e7b02e0c7f109a5aa461a7078f2aabf5ead8e2939ab342"></a>digital_io_high&#160;</td><td class="fielddoc"><p>Digital I/O high state. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<a id="a216f91cad191660abefa5b029f6904ed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a216f91cad191660abefa5b029f6904ed">&#9670;&nbsp;</a></span>digital_io_type</h2>
+<a id="a033d47970169ec3ed598b9e714ded389"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a033d47970169ec3ed598b9e714ded389">&#9670;&nbsp;</a></span>digital_io_type_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="digital__io__adapter_8h.html#a216f91cad191660abefa5b029f6904ed">digital_io_type</a></td>
+          <td class="memname">enum <a class="el" href="digital__io__adapter_8h.html#a033d47970169ec3ed598b9e714ded389">digital_io_type_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Digital IO types. </p>
-<ul>
-<li></li>
-</ul>
+<p>Enumeration for digital I/O types. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a216f91cad191660abefa5b029f6904edaba0c504a67579f417c66449a86a66fc0"></a>digital_input&#160;</td><td class="fielddoc"><p>Digital Input </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a033d47970169ec3ed598b9e714ded389aba0c504a67579f417c66449a86a66fc0"></a>digital_input&#160;</td><td class="fielddoc"><p>Digital input. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a216f91cad191660abefa5b029f6904eda6c40c78910ea342f2fdd6394c1de0002"></a>digital_output&#160;</td><td class="fielddoc"><p>Digital Output </p>
+<tr><td class="fieldname"><a id="a033d47970169ec3ed598b9e714ded389a6c40c78910ea342f2fdd6394c1de0002"></a>digital_output&#160;</td><td class="fielddoc"><p>Digital output. </p>
 </td></tr>
 </table>
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="ae0a6a3d00ac58e25af7e288a05d7e93f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0a6a3d00ac58e25af7e288a05d7e93f">&#9670;&nbsp;</a></span>digital_io_deinitialize()</h2>
+<a id="a67f5bb09af55694b1a12ac77d44fd745"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f5bb09af55694b1a12ac77d44fd745">&#9670;&nbsp;</a></span>return_codes_t</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a> digital_io_deinitialize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structdigital__io.html">p_digital_io_t</a>&#160;</td>
-          <td class="paramname"><em>dio</em></td><td>)</td>
-          <td></td>
+          <td class="memname">enum <a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Deinitializes the DigitalIO reference. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dio</td><td>DigitalIO reference </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>RETURN_SUCCESS or a specific error code.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>See full documentation in module's header file. </dd></dl>
-
-</div>
-</div>
-<a id="a4a978e9f787c6306b0cd9efe147ee603"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a978e9f787c6306b0cd9efe147ee603">&#9670;&nbsp;</a></span>digital_io_initialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a> digital_io_initialize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structdigital__io.html">p_digital_io_t</a>&#160;</td>
-          <td class="paramname"><em>dio</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="digital__io__adapter_8h.html#af9866811d6a72814e011336cba77082d">digital_io_state_t</a>&#160;</td>
-          <td class="paramname"><em>initial_state</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initializes the DigitalIO in output mode. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dio</td><td>DigitalIO reference </td></tr>
-    <tr><td class="paramname">initial_state</td><td>Default output value </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>RETURN_SUCCESS or a specific error code.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>See full documentation in module's header file. </dd></dl>
-
-</div>
-</div>
-<a id="aa3f9d056c4e64fe30a4d8bdfef681f3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3f9d056c4e64fe30a4d8bdfef681f3d">&#9670;&nbsp;</a></span>digital_io_read()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a> digital_io_read </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structdigital__io.html">p_digital_io_t</a>&#160;</td>
-          <td class="paramname"><em>dio</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="digital__io__adapter_8h.html#af9866811d6a72814e011336cba77082d">digital_io_state_t</a> *&#160;</td>
-          <td class="paramname"><em>p_state</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reads the state of a digital output. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dio</td><td>DigitalIO reference </td></tr>
-    <tr><td class="paramname">state</td><td>Pointer where the current output state will be saved </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>RETURN_SUCCESS or a specific error code.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>See full documentation in module's header file. </dd></dl>
-
-</div>
-</div>
-<a id="aa25fd3fd834a781351930ef0a620145a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa25fd3fd834a781351930ef0a620145a">&#9670;&nbsp;</a></span>digital_io_toggle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a> digital_io_toggle </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structdigital__io.html">p_digital_io_t</a>&#160;</td>
-          <td class="paramname"><em>dio</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Toggles the output. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dio</td><td>DigitalIO reference </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>RETURN_SUCCESS or a specific error code.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>See full documentation in module's header file. </dd></dl>
-
-</div>
-</div>
-<a id="a9bab49010cd3af183b246253790f52a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bab49010cd3af183b246253790f52a7">&#9670;&nbsp;</a></span>digital_io_write()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="digital__io__adapter_8h.html#a67f5bb09af55694b1a12ac77d44fd745">return_codes_t</a> digital_io_write </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structdigital__io.html">p_digital_io_t</a>&#160;</td>
-          <td class="paramname"><em>dio</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="digital__io__adapter_8h.html#af9866811d6a72814e011336cba77082d">digital_io_state_t</a>&#160;</td>
-          <td class="paramname"><em>state</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Writes to the digital output. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dio</td><td>DigitalIO reference </td></tr>
-    <tr><td class="paramname">state</td><td>State to be written </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>RETURN_SUCCESS or a specific error code.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>See full documentation in module's header file. </dd></dl>
+<p>Return codes for digital I/O operations. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a67f5bb09af55694b1a12ac77d44fd745a4495f78352a9709314d1453e7e417a3c"></a>return_success&#160;</td><td class="fielddoc"><p>Operation successful. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a67f5bb09af55694b1a12ac77d44fd745aeefbd22ba103ae12edb1f1d855dbd81a"></a>return_error&#160;</td><td class="fielddoc"><p>Error occurred. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a67f5bb09af55694b1a12ac77d44fd745a1196b1aba206c2e3cd3519f915d977d9"></a>return_invalid_input&#160;</td><td class="fielddoc"><p>Invalid input. </p>
+</td></tr>
+</table>
 
 </div>
 </div>
