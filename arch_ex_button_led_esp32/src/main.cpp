@@ -1,4 +1,4 @@
-#include <Arduino.h>
+//#include <Arduino.h>
 #include "button.h"
 #include "hw_map.h"
 #include "led.h"
@@ -29,6 +29,8 @@ void setup() {
 
     pushButton2.button_io.pin = BUTTON_2_PIN;
     button_initialize(&pushButton2);
+
+    Serial.begin(9600); // opens serial port, sets data rate to 115200 bps
 }
 
 void loop() {
@@ -48,7 +50,7 @@ void loop() {
 
     g_update_led_freq++;
 
-    if (g_update_led_freq == 50000) {
+    if (g_update_led_freq == 100000) {
         switch (g_pressured_counting) {
             case 1:
                 ledActions.turn_on(&ledGreen);
@@ -66,6 +68,10 @@ void loop() {
             default:
             break;
         }
-        g_update_led_freq= 0;
+        // // say what you got:
+        // Serial.print("ESP32 received: ");
+        // Serial.println(g_update_led_freq);
+        // ledActions.toggle(&ledGreen);
+        g_update_led_freq = 0;
     }
 }

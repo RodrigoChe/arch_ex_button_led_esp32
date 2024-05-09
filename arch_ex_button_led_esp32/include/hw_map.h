@@ -19,12 +19,12 @@
 /**
  * @brief Pin number for the green LED.
  */
-#define LED_GREEN_PIN   (2)
+#define LED_GREEN_PIN   (4)
 
 /**
  * @brief Pin number for the red LED.
  */
-#define LED_RED_PIN     (4)
+#define LED_RED_PIN     (2)
 
 /* Digital Inputs */
 
