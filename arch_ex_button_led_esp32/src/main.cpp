@@ -68,10 +68,6 @@ void loop() {
             default:
             break;
         }
-        // // say what you got:
-        // Serial.print("ESP32 received: ");
-        // Serial.println(g_update_led_freq);
-        // ledActions.toggle(&ledGreen);
         g_update_led_freq = 0;
     }
 }
