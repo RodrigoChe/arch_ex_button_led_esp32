@@ -1,5 +1,5 @@
 # arch_ex_button_led_esp32
-This repo contains an example of using a layered firmware architecture made on bare metal using the Arduino framework for an ESP32 microcontroller present in DIO devkit v1 board.
+This repo contains an example of using a layered firmware architecture made on bare metal using the Arduino framework for an ESP32 microcontroller present in DOIT devkit v1 board.
 
 # Application that Reads Buttons and Controls LEDs to Exemplify the Use of Decoupled Layered Architecture
 
@@ -15,12 +15,41 @@ The goal here is to demonstrate with something simple that it's possible to buil
 ## Architectural scheme 
 The project has the following architecture:
 
-![Figure 1](docs/figs/layersFig.png)
+![Figure 1](arch_ex_button_led_esp32/docs/figs/layersFig.png)
 
-![Figure 2](path/to/figure2.png)
+![Figure 2](arch_ex_button_led_esp32/docs/figs/firmwareOrganigram.png)
 
 The project file structure is as follows:
-
+```shell
+.
+├── arch_ex_button_led_esp32
+│   ├── docs
+│   │   ├── Doxyfile
+│   │   ├── figs
+│   │   ├── html
+│   │   └── latex
+│   ├── include
+│   │   ├── hw_map.h
+│   │   └── README
+│   ├── lib
+│   │   ├── adpter_digitalio
+│   │   │   ├── digital_io_adapter.c
+│   │   │   └── digital_io_adapter.h
+│   │   ├── component_button
+│   │   │   ├── button.c
+│   │   │   └── button.h
+│   │   ├── component_led
+│   │   │   ├── led.c
+│   │   │   └── led.h
+│   │   └── README
+│   ├── platformio.ini
+│   ├── src
+│   │   ├── main.cpp
+│   │   └── output
+│   └── test
+│       └── README
+└── README.md
+```
 
 Where:
 
