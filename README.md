@@ -61,7 +61,11 @@ To access the code documentation, go to the directory `docs/html/index.html`.
 
 ## Conclusion
 As soon as possible test and mocks will be add.
-Feel free to copy, modify, and share this example. Don't forget to mention the original source.
+Feel free to copy, modify, and share this example.
+
+Don't forget to mention the original source.
+
+Created by Rodrigo Pechoneri 2024.
 
 Happy coding.
 
