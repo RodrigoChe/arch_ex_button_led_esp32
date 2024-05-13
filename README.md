@@ -15,7 +15,7 @@ The goal here is to demonstrate with something simple that it's possible to buil
 ## Architectural scheme 
 The project has the following architecture:
 
-![Figure 1](docs/figs/layersFig.png)
+![Figure 1](arch_ex_button_led_esp32/docs/figs/layersFig.png)
 
 ![Figure 2](path/to/figure2.png)
 
