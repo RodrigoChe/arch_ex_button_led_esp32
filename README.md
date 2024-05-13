@@ -60,6 +60,8 @@ Where:
 To access the code documentation, go to the directory `docs/html/index.html`.
 
 ## Conclusion
+This project was write with VScode using Platformio and compiled with gcc.
+
 As soon as possible test and mocks will be add.
 Feel free to copy, modify, and share this example.
 
