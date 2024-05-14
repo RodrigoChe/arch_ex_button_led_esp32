@@ -5,8 +5,6 @@
  *****************************************************************************/
 
 #include "led.h"
-#include "assert.h" // devo usar essa lib padrão? Se não porque? qual a alternativa!
-//TODO: colocar os asserts para verificar ponteiro nulo para o led!!!
 
 /**
  * @details This function initializes the LED by configuring its digital I/O pin.
